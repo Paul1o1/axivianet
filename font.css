@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Raveo Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url("raveo-font-family/Raveo-Display-Regular-BF6747d9eb6d8a9.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Raveo Display";
+  font-style: normal;
+  font-weight: 500;
+  src: url("raveo-font-family/Raveo-Display-Medium-BF6747d9eb6d8a9.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Raveo Display";
+  font-style: normal;
+  font-weight: 600;
+  src: url("raveo-font-family/Raveo-Display-SemiBold-BF6747d9eba9183.otf")
+    format("opentype");
+}
