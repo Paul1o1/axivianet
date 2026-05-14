@@ -16,6 +16,26 @@
     #log { background: #111; color: #0f0; font-family: monospace; font-size: 12px; padding: 12px; border-radius: 8px; margin-bottom: 20px; white-space: pre-wrap; }
   </style>
 <style>.w-commerce-commercecartwrapper, .meet-wrapper { display: none !important; }</style>
+
+  <style>
+    /* Force all Webflow IX2-hidden elements to be visible */
+    [data-w-id][style*="opacity: 0"],
+    [data-w-id][style*="opacity:0"] {
+      opacity: 1 !important;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('[data-w-id]').forEach(function (el) {
+        if (el.style.opacity === '0') {
+          el.style.opacity = '1';
+        }
+      });
+      document.querySelectorAll('[style*="opacity: 0"], [style*="opacity:0"]').forEach(function (el) {
+        el.style.opacity = '1';
+      });
+    });
+  </script>
 </head>
 <body>
   <h2>Lottie 5.12.2 Text Rendering Test</h2>
